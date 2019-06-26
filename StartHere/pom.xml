@@ -13,7 +13,7 @@
     <version>0.0.1-SNAPSHOT</version>
     <name>authenticatedusers</name>
     <description>Demo project for Spring Boot</description>
-
+    <packaging>jar</packaging>
     <properties>
         <java.version>11</java.version>
     </properties>
@@ -135,16 +135,16 @@
     </dependencies>
 
     <build>
-<!--        <finalName>${project.artifactId}</finalName>-->
-        <finalName>jrmmba-starthere</finalName>
+        <finalName>${project.artifactId}</finalName>
+        <!--           <finalName>shoonschool</finalName>-->
 
-        <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
+              <plugins>
+                  <plugin>
+                      <groupId>org.springframework.boot</groupId>
+                      <artifactId>spring-boot-maven-plugin</artifactId>
+                  </plugin>
 
-            <!-- Heroku Maven Plugin Configuration -->
+                  <!-- Heroku Maven Plugin Configuration -->
             <!-- https://cwiki.apache.org/confluence/display/MAVEN/Maven+Properties+Guide -->
             <plugin>
                 <groupId>com.heroku.sdk</groupId>
